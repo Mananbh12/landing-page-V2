@@ -8,35 +8,35 @@ const Hero = () => {
     const logo = "/logo.png";
 
   return (
-    <div className='pb-20 pt-36'>
-        <div>
-            <Spotlight className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen" fill="white" />
-            <Spotlight className="-top-10 left-full h-[80vh] w-[50vw]" fill="purple" />
-            <Spotlight className="-top-28 left-80 h-[80vh] w-[50vw]" fill="blue" />
+    <div className="pb-20 pt-36 bg-[#FAF3E0]">
+        {/* Effets lumineux */}
+        <div className="relative">
+            <Spotlight className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen opacity-90" fill="#FFC107" /> 
+            <Spotlight className="-top-10 left-full h-[80vh] w-[50vw] opacity-80" fill="#66BB6A" /> 
+            <Spotlight className="-top-28 left-80 h-[80vh] w-[50vw] opacity-85" fill="#66BB6A" />  
         </div>
-        <div>
-            <div className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.03] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0">
-                <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />  
-            </div>
-            <div className='flex justify-center relative my-20z-10'>
-                <div className='max-w-[89w] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
-                    <img src={logo} />
-                    <TextGenerateEffect 
-                    className='text-center text-40 md:text-xl lg:text-6xl'
-                    words={"25 ans d'expertise au service de vos projets"} 
-                    />
-                    <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
-                        Experts en revêtements de sols de père en fils
-                    </p>
 
-                    <a href="#projects">
-                        <MagicButton
+        {/* Contenu principal */}
+        <div className="relative flex justify-center my-20">
+            <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
+                <img src={logo} alt="Logo" className="w-60 h-auto drop-shadow-lg" />
+                
+                <TextGenerateEffect 
+                    className="text-center text-gray-700 text-3xl md:text-4xl lg:text-6xl drop-shadow-lg"
+                    words={"25 ans d'expertise au service de vos projets"} 
+                />
+                
+                <p className="text-center text-gray-700 md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl drop-shadow-lg">
+                    Experts en revêtements de sols de père en fils
+                </p>
+
+                <a href="#projects">
+                    <MagicButton
                         title="Voir mes projets"
                         icon={<FaLocationArrow />}
-                        position='right'
-                        />
-                    </a>
-                </div>
+                        position="right"
+                    />
+                </a>
             </div>
         </div>
     </div>
