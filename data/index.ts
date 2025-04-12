@@ -86,16 +86,16 @@ export const companies = [
   {
     id: 1,
     name: "Nexity",
-    img: "/logo.png", // Remplace ""
+    img: "/nexity-texte.png", // Remplace ""
   },
   {
     id: 2,
     name: "Atland Residentiel",
-    img: "/logo.png", // Remplace ""
+    img: "/atland-logo.jpeg", // Remplace ""
   },
   {
     id: 3,
     name: "Paris Ouest Construction",
-    img: "/logo.png", // Remplace ""
+    img: "/paris-ouest-logo.png", // Remplace ""
   },
 ];
