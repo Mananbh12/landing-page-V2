@@ -10,7 +10,6 @@ export default function Home() {
   return (
     <main>
       <div>
-        <FloatingNav navItems={navItems} />
         <Hero />
         <Grid />
         <RecentProjects />

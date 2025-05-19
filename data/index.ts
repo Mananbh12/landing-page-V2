@@ -1,8 +1,8 @@
 export const navItems = [
-  { name: "About", link: "#about" },
-  { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
-  { name: "Contact", link: "#contact" },
+  { name: "About", link: "/#about" }, // Ancre sur page d'accueil
+  { name: "Projects", link: "/#projects" },
+  { name: "Testimonials", link: "/#testimonials" },
+  //{ name: "Contact", link: "/contact" }, // Route vers page contact
 ];
 
 export const gridItems = [
@@ -19,32 +19,32 @@ export const projects = [
     id: 1,
     title: "Pitchez votre startup, Connectez vous avec des entrepreneurs",
     des: "Soumettez des idées, votez sur les propositions et faites-vous remarquer lors des compétitions virtuelles.",
-    img: "/logo.png", // Remplace ""
-    iconLists: ["/logo.png", "/logo.png", "/logo.png"], // Remplace ["", "", ""]
+    img: "/logo.png",
+    iconLists: ["/logo.png", "/logo.png", "/logo.png"],
     link: "https://yc-directory-ecru-nu.vercel.app/",
   },
   {
     id: 2,
     title: "Crespières Château – Atland Résidentiel",
     des: "Résidence de 79 logements où nous intervenons pour le sol dur, livraison prévue en janvier 2025. 2000m2 carrelage",
-    img: "/logo.png", // Remplace ""
-    iconLists: ["/logo.png"], // Ajoute une icône pour éviter un tableau vide
+    img: "/logo.png",
+    iconLists: ["/logo.png"],
     link: "https://www.atland-logement.fr/actualites/article/premiere-pierre-a-crespieres",
   },
   {
     id: 3,
     title: "Groupe Scolaire Saint-Exupery",
     des: "Création d'une application web de gestion de classes via MongoDB avec authentification",
-    img: "/logo.png", // Remplace ""
-    iconLists: ["/logo.png", "/logo.png", "/logo.png"], // Remplace ["", "", ""]
+    img: "/logo.png",
+    iconLists: ["/logo.png", "/logo.png", "/logo.png"],
     link: "https://github.com/Mananbh12/4DEVS",
   },
   {
     id: 4,
     title: "Romainville Fareva – Paris Ouest Construction",
     des: "Intervention en sols durs et sols souples dans 146 studios et espaces de vie d'artistes. 4000m2 pvc, 500m2 carrelage",
-    img: "/logo.png", // Remplace ""
-    iconLists: ["/logo.png"], // Ajoute une icône pour éviter un tableau vide
+    img: "/logo.png",
+    iconLists: ["/logo.png"],
     link: "https://www.ville-romainville.fr/1073-zac-de-l-horloge.html",
   },
 ];
@@ -86,16 +86,16 @@ export const companies = [
   {
     id: 1,
     name: "Nexity",
-    img: "/nexity-texte.png", // Remplace ""
+    img: "/nexity-texte.png",
   },
   {
     id: 2,
     name: "Atland Residentiel",
-    img: "/atland-logo.jpeg", // Remplace ""
+    img: "/atland-logo.jpeg",
   },
   {
     id: 3,
     name: "Paris Ouest Construction",
-    img: "/paris-ouest-logo.png", // Remplace ""
+    img: "/paris-ouest-logo.png",
   },
 ];
