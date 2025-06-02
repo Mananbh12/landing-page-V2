@@ -3,6 +3,8 @@ import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
 import MagicButton from './ui/MagicButton'
 import { FaLocationArrow } from 'react-icons/fa'
+import Image from "next/image";
+
 
 const Hero = () => {
     const logo = "/logo.png";
@@ -19,7 +21,13 @@ const Hero = () => {
         {/* Contenu principal */}
         <div className="relative flex justify-center my-20">
             <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-                <img src={logo} alt="Logo" className="w-60 h-auto drop-shadow-lg" />
+            <Image
+                src={logo}
+                alt="Logo"
+                width={240} // w-60 équivaut à 240px (60 * 4px, base Tailwind)
+                height={60} // Ajustez selon la hauteur réelle du logo, ou laissez Next.js gérer avec "fill"
+                className="h-auto drop-shadow-lg"
+                />
                 
                 <TextGenerateEffect 
                     className="text-center text-gray-700 text-3xl md:text-4xl lg:text-6xl drop-shadow-lg"

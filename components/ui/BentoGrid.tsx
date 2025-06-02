@@ -1,4 +1,5 @@
 import { cn } from "../../utils/cn";
+import Image from "next/image";
 
 export const BentoGrid = ({
   className,
@@ -25,28 +26,37 @@ export const BentoGridItem = ({
   description,
 }: {
   className?: string;
-  img?: string; // Utiliser un string (URL de l'image) au lieu d'un JSX element
+  img?: string;
   description?: string | React.ReactNode;
 }) => {
   return (
     <div
       className={cn(
-        "row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-4 dark:bg-black dark:border-white/[0.2] bg-white border border-transparent flex flex-row space-x-4 items-center",
-        className
+        "row-span-1 rounded-xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-2 dark:bg-black dark:border-white/[0.2] bg-white border border-transparent flex flex-col md:flex-row items-center gap-2 max-h-[700px] overflow-hidden" // Réduit padding et ajoute overflow-hidden
       )}
     >
-      <div className="flex-1 relative">
-        {/* Utiliser l'URL pour afficher l'image */}
+      <div className="flex-1 relative h-full">
         {img && (
-          <img
+          <Image
             src={img}
             alt="Image"
+            width={300}
+            height={100} // Réduit de 50 % par rapport à 200px
             className="object-cover w-full h-full rounded-xl"
           />
         )}
       </div>
-      <div className="w-1/2 font-sans font-normal text-neutral-600 text-xs dark:text-neutral-300">
-        {description}
+      <div
+        className={cn(
+          "flex-1 h-full flex items-center font-sans font-normal text-neutral-600 text-xs dark:text-neutral-300",
+          className
+        )}
+      >
+        {typeof description === "string" ? (
+          <p>{description}</p>
+        ) : (
+          description
+        )}
       </div>
     </div>
   );
