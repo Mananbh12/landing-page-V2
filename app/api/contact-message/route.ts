@@ -48,7 +48,7 @@ export async function POST(request: Request) {
     console.log("Resend email response:", emailResponse);
 
     return NextResponse.json({ success: true, emailResponse }, { status: 200 });
-  } catch (error) {
+  } catch (error: unknown) {
     console.error("Error in /api/contact-message:", error);
     if (error instanceof z.ZodError) {
       console.log("Zod validation errors:", error.errors);
@@ -57,8 +57,10 @@ export async function POST(request: Request) {
         { status: 400 }
       );
     }
+    // Affiner le type de error
+    const errorMessage = error instanceof Error ? error.message : "Erreur inconnue";
     return NextResponse.json(
-      { error: "Erreur lors de l'envoi du message", details: error.message },
+      { error: "Erreur lors de l'envoi du message", details: errorMessage },
       { status: 500 }
     );
   }
