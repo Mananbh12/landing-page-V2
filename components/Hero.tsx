@@ -38,7 +38,7 @@ const Hero = () => {
                     Experts en revêtements de sols de père en fils
                 </p>
 
-                <a href="/projects">
+                <a href="#projects">
                     <MagicButton
                         title="Voir nos projets"
                         icon={<FaLocationArrow />}
