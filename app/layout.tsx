@@ -11,6 +11,9 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 export const metadata: Metadata = {
   title: "Mitra",
   description: "Entreprise de pose de sols",
+  icons: {
+    icon: "/favicon.png", 
+  },
 };
 
 export default function RootLayout({
