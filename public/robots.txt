@@ -1,0 +1,11 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /dashboard
+
+# Host
+Host: https://www.mitra-sol.com
+
+# Sitemaps
+Sitemap: https://www.mitra-sol.com/sitemap.xml

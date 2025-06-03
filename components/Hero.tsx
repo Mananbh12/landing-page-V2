@@ -5,7 +5,6 @@ import MagicButton from './ui/MagicButton'
 import { FaLocationArrow } from 'react-icons/fa'
 import Image from "next/image";
 
-
 const Hero = () => {
     const logo = "/logo.png";
 
@@ -23,9 +22,9 @@ const Hero = () => {
             <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
             <Image
                 src={logo}
-                alt="Logo"
-                width={240} // w-60 équivaut à 240px (60 * 4px, base Tailwind)
-                height={60} // Ajustez selon la hauteur réelle du logo, ou laissez Next.js gérer avec "fill"
+                alt="Logo de Mitra Sol, entreprise de pose de carrelage et parquet à Paris, Versailles, Boulogne-Billancourt, Saint-Denis, Créteil, Argenteuil, Montreuil, Évry-Courcouronnes, Chelles, Nanterre en Île-de-France"
+                width={240}
+                height={60}
                 className="h-auto drop-shadow-lg"
                 />
                 

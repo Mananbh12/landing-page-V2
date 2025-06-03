@@ -34,7 +34,7 @@ const RecentProjects = async () => {
                 {img?.asset?.url && (
                   <Image
                     src={img.asset.url}
-                    alt={title}
+                    alt={`Projet de ${title} - Pose de carrelage ou parquet par Mitra Sol à Paris, Versailles, Boulogne-Billancourt, Saint-Denis, Créteil, Argenteuil, Montreuil, Évry-Courcouronnes, Chelles, Nanterre en Île-de-France`}
                     fill
                     style={{ objectFit: "contain" }}
                     className="z-10 absolute bottom-0 drop-shadow-lg"
@@ -60,7 +60,7 @@ const RecentProjects = async () => {
                       >
                         <Image
                           src={icon.asset.url}
-                          alt={`icon-${index}`}
+                          alt={`Icône ${index} du projet ${title} par Mitra Sol à Sartrouville, Massy, Aulnay-sous-Bois, Vitry-sur-Seine, Sarcelles en Île-de-France`}
                           width={40}
                           height={40}
                           style={{ padding: "8px" }}

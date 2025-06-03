@@ -36,7 +36,7 @@ const Clients = async () => {
                   {img?.asset?.url && (
                     <Image
                       src={img.asset.url}
-                      alt={name}
+                      alt={`Logo de ${name}, partenaire de Mitra Sol pour la pose de carrelage et parquet à Paris, Versailles, Boulogne-Billancourt, Saint-Denis, Créteil, Argenteuil, Montreuil, Évry-Courcouronnes, Chelles, Nanterre en Île-de-France`}
                       width={40}
                       height={40}
                       className="md:w-10 w-5 drop-shadow-lg"
