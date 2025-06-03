@@ -48,7 +48,7 @@ export const BentoGridItem = ({
       </div>
       <div
         className={cn(
-          "flex-1 h-full flex items-center font-sans font-normal text-neutral-600 text-xs dark:text-neutral-300",
+          "flex-1 h-full flex items-center font-serif font-normal text-neutral-600 text-xs dark:text-neutral-300",
           className
         )}
       >
