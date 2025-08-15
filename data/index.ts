@@ -1,6 +1,8 @@
 export const navItems = [
   { name: "About", link: "/#about" }, // Ancre sur page d'accueil
   { name: "Projects", link: "/#projects" },
+  { name: "Avant/Après", link: "/#before-after" },
+  { name: "Galerie", link: "/#gallery" },
   { name: "Testimonials", link: "/#testimonials" },
   //{ name: "Contact", link: "/contact" }, // Route vers page contact
 ];

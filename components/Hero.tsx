@@ -9,7 +9,7 @@ const Hero = () => {
     const logo = "/logo.png";
 
   return (
-    <div className="pb-20 pt-36 bg-[#FAF3E0]">
+    <div className="pb-20 pt-36 bg-[#FAF3E0] min-h-screen">
         {/* Effets lumineux */}
         <div className="relative">
             <Spotlight className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen opacity-90" fill="#FFC107" /> 
