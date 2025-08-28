@@ -13,10 +13,9 @@ export default function Home() {
     <main>
       <div>
         <Hero />
-        <Grid />
-        <RecentProjects />
         <BeforeAfterCarousel />
         <WorkGallery />
+        <RecentProjects />
         <Clients />
       </div>
     </main>

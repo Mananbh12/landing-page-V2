@@ -23,8 +23,8 @@ const Hero = () => {
             <Image
                 src={logo}
                 alt="Logo de Mitra Sol, entreprise de pose de carrelage et parquet à Paris, Versailles, Boulogne-Billancourt, Saint-Denis, Créteil, Argenteuil, Montreuil, Évry-Courcouronnes, Chelles, Nanterre en Île-de-France"
-                width={240}
-                height={60}
+                width={300}
+                height={100}
                 className="h-auto drop-shadow-lg"
                 />
                 

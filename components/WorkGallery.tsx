@@ -23,47 +23,47 @@ const galleryImages: GalleryImage[] = [
     url: "/gallery-carrelage-1.jpg",
     alt: "Installation carrelage moderne dans salle de bain",
     title: "Salle de bain contemporaine",
-    description: "Installation de carrelage moderne avec joints époxy",
+    description: "Fourniture et pose de faïence dans une salle de bain",
     category: "carrelage",
-    isPlaceholder: true
+    isPlaceholder: false
   },
   {
     id: "2",
-    url: "/gallery-parquet-1.jpg",
-    alt: "Parquet massif chêne dans salon",
-    title: "Salon élégant",
-    description: "Pose de parquet massif chêne avec finition naturelle",
-    category: "parquet",
-    isPlaceholder: true
+    url: "/cuisine-faience.jpg",
+    alt: "Fourniture et pose de faience dans une cuisine",
+    title: "Cuisine",
+    description: "Fourniture et pose de faïence dans une cuisine",
+    category: "carrelage",
+    isPlaceholder: false
   },
   {
     id: "3",
-    url: "/gallery-pvc-1.jpg",
-    alt: "Sol PVC imitation parquet dans cuisine",
-    title: "Cuisine moderne",
-    description: "Sol PVC imitation parquet pour une cuisine fonctionnelle",
-    category: "pvc",
-    isPlaceholder: true
+    url: "/hall-romainville.jpg",
+    alt: "Fourniture et pose de carrelage dans un hall d'entrée",
+    title: "Pose de carreaux grands format dans un hall d'entrée",
+    description: "Chantier Romainville avec Paris Ouest Construction",
+    category: "carrelage",
+    isPlaceholder: false
   },
   {
     id: "4",
     url: "/gallery-renovation-1.jpg",
-    alt: "Rénovation parquet ancien",
-    title: "Rénovation parquet",
-    description: "Restauration complète d'un parquet ancien",
+    alt: "Carrelage chez un particulier",
+    title: "Pose de carrelage chez un particulier",
+    description: "Pose de carrelage grand format par dessus du carrelage existant chez un particulier",
     category: "renovation",
-    isPlaceholder: true
+    isPlaceholder: false
   },
   {
     id: "5",
     url: "/gallery-carrelage-2.jpg",
-    alt: "Carrelage extérieur terrasse",
-    title: "Terrasse extérieure",
-    description: "Installation de carrelage extérieur résistant aux intempéries",
+    alt: "Carrelage anti-dérapant posé dans un local OM",
+    title: "Pose de carrelage technique dans un local OM ",
+    description: "Fourniture et pose de carrelage anti-dérapant dans un local OM",
     category: "carrelage",
-    isPlaceholder: true
+    isPlaceholder: false
   },
-  {
+  /*{
     id: "6",
     url: "/gallery-parquet-2.jpg",
     alt: "Parquet contrecollé dans chambre",
@@ -72,6 +72,7 @@ const galleryImages: GalleryImage[] = [
     category: "parquet",
     isPlaceholder: true
   },
+  
   {
     id: "7",
     url: "/gallery-pvc-2.jpg",
@@ -89,7 +90,7 @@ const galleryImages: GalleryImage[] = [
     description: "Remplacement complet du carrelage avec nouvelle douche",
     category: "renovation",
     isPlaceholder: true
-  }
+  }*/
 ];
 
 const categories = [
@@ -255,18 +256,13 @@ const WorkGallery = () => {
         {filteredImages.length === 0 && (
           <div className="text-center py-12">
             <p className="text-gray-400 text-lg">
-              Aucune image trouvée dans cette catégorie pour le moment.
+              Des images seront bientôt disponibles.
             </p>
           </div>
         )}
 
         {/* Message d'information */}
-        <div className="text-center mt-12 p-4 bg-blue-500/10 border border-blue-500/20 rounded-lg">
-          <p className="text-blue-300 text-sm">
-            ℹ️ Les images affichées sont des placeholders. Remplacez-les par vos vraies photos 
-            de projets en suivant le guide IMAGES_SETUP.md
-          </p>
-        </div>
+        
       </div>
 
       {/* Lightbox */}

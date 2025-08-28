@@ -30,21 +30,21 @@ const beforeAfterData: BeforeAfterImage[] = [
   {
     id: "1",
     before: {
-      url: "/placeholder-before-1.jpg",
-      alt: "Sol avant rénovation - Carrelage usé et décoloré",
-      description: "Sol en carrelage usé et décoloré nécessitant une rénovation complète",
-      isPlaceholder: true
+      url: "/before-1.jpg",
+      alt: "Sol en cours de pose - Carrelage posé",
+      description: "Hall d'entrée en cours de pose",
+      isPlaceholder: false
     },
     after: {
-      url: "/placeholder-after-1.jpg",
-      alt: "Sol après rénovation - Nouveau carrelage moderne",
-      description: "Nouveau carrelage moderne et élégant installé avec soin",
-      isPlaceholder: true
+      url: "/after-1.jpg",
+      alt: "Carrelage posé",
+      description: "Carrelage posé",
+      isPlaceholder: false
     },
-    projectTitle: "Rénovation Appartement Haussmannien",
-    location: "Paris 8ème",
-    surface: "45m²"
-  },
+    projectTitle: "Chantier Trappes avec Nexity",
+    location: "Trappes",
+    surface: "1300 m²"
+  },/*
   {
     id: "2",
     before: {
@@ -80,7 +80,7 @@ const beforeAfterData: BeforeAfterImage[] = [
     projectTitle: "Remplacement Sol PVC Bureau",
     location: "Boulogne-Billancourt",
     surface: "120m²"
-  }
+  }*/
 ];
 
 const BeforeAfterCarousel = () => {
@@ -294,12 +294,7 @@ const BeforeAfterCarousel = () => {
         </div>
 
         {/* Message d'information */}
-        <div className="text-center mt-8 p-4 bg-blue-500/10 border border-blue-500/20 rounded-lg">
-          <p className="text-blue-300 text-sm">
-            ℹ️ Les images affichées sont des placeholders. Remplacez-les par vos vraies photos 
-            de projets avant/après en suivant le guide IMAGES_SETUP.md
-          </p>
-        </div>
+        
       </div>
     </section>
   );
