@@ -10,8 +10,8 @@ import { navItems } from "@/data";
 export default function Home() {
 
   return (
-    <main>
-      <div>
+    <main className="overflow-x-hidden">
+      <div className="px-4 sm:px-6 lg:px-0">
         <Hero />
         <BeforeAfterCarousel />
         <WorkGallery />
